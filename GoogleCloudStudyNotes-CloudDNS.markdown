@@ -93,7 +93,5 @@ GCP 的 Cloud DNS 設定非常的容易, 首先是進到 GCP 的主控台, 接�
 ![](images/learn_gcp_cloud_dns_08_nslookup_dns.png)
 
 
-[comment]: <> (URL Link)
-
 [freenom]: http://www.freenom.com
 [dnssec]: https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%89%A9%E5%B1%95
