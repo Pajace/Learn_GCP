@@ -29,17 +29,17 @@ DNS, Domain Name Service, 是一種以文字代替 IP 位置的一種查詢服�
 
 GCP 的 Cloud DNS 設定非常的容易, 首先是進到 GCP 的主控台, 接著點選 **Cloud DNS**
 
-![][01-enter-cloud-dns]
+![](images/learn_gcp_cloud_dns_01_click_cloud_dns.png)
 
 接著是選擇建立區域
 
-![][02-create-domain]
+![](images/learn_gcp_cloud_dns_02_select_create_domain.png)
 
 填入可以提供自己識別的 **區域名稱** 和 我們剛剛申請的 **DNS 名稱** `elegant-aeon.tk` 接著點選 **建立**
 
 關於 DNSSEC 就保持停用即可，關於 DNSSEC 可以參考 [這裡][dnssec]
 
-![][03-dns-domain-created]
+![](images/learn_gcp_cloud_dns_03_create_dns_domain.png)
 
 接著我們就可以看到 Cloud DNS 預設就為我們建立了兩筆紀錄, 分別是 **NS** 以及 **SOA**, NS 必須要先寄下來，等會兒會用到，SOA 不用管他，放著就好。
 
@@ -51,15 +51,15 @@ GCP 的 Cloud DNS 設定非常的容易, 首先是進到 GCP 的主控台, 接�
 1. elegant-aeon.tk 有一個別名 (CNAME) www.elegant-aeon.tk
 1. mine.elegant-aeon.tk 對應到 (A) 35.201.139.239
 
-![][04-add-dns-record00]
+![](images/learn_gcp_cloud_dns_05_add_record_00.png)
 
-![][04-add-dns-record01]
+![](images/learn_gcp_cloud_dns_05_add_record_01.png)
 
-![][04-add-dns-record02]
+![](images/learn_gcp_cloud_dns_05_add_record_02.png)
 
 新增好兩筆紀錄之後就會在 區域詳細資料看到我們剛剛新增的那兩筆
 
-![][05-show-dns-detail]
+![](images/learn_gcp_cloud_dns_06_dns_detail.png)
 
 做到這邊，在 GCP Cloud DNS 的設定就差不多了，但還不會生效，我們必須要把我們 domain name 裡的 NS 資料填到 我們申請 DNS 的主機上面才會真的生效。
 
@@ -69,15 +69,15 @@ GCP 的 Cloud DNS 設定非常的容易, 首先是進到 GCP 的主控台, 接�
 
 首先，在登入 [freenom] 之後選擇 **Service** -> **My Domains**
 
-![][setup-ns-on-freenom01]
+![](images/learn_gcp_cloud_dns_07_setup_ns_01.png)
 
 接著在我們要設定的 Domain 上面點選 **Manage Domain**
 
-![][setup-ns-on-freenom02]
+![](images/learn_gcp_cloud_dns_07_setup_ns_02.png)
 
 進到我們欲修改的 **Domain** 之後，選擇 **Management Tools** -> **Nameservers**
 
-![][setup-ns-on-freenom03]
+![](images/learn_gcp_cloud_dns_07_setup_ns_03.png)
 
 最後一步就是選擇 **Use coustom nameservers(enter below)** 並且將我們的 GCP Cloud DNS 的 NS 填入下方的 Nameserver 1 ~ 4, 再單擊 **Change Nameservers**, 就完成了。
 
@@ -85,29 +85,15 @@ GCP 的 Cloud DNS 設定非常的容易, 首先是進到 GCP 的主控台, 接�
 
 基本上一分鐘左右就會生效了，如果遲遲沒有生效，可以檢查一下是不是 [freenom] 沒有設定好，因為我遇過幾次明明設定了，但就是沒有存進去，目前還不知道是為什麼，但再重新設定一次就好了。
 
-![][setup-ns-on-freenom04]
+![](images/learn_gcp_cloud_dns_07_setup_ns_04.png)
 
 
 下圖是使用 nslookup 驗證的結果
 
-![][nslookup-dns-reuslt]
+![](images/learn_gcp_cloud_dns_08_nslookup_dns.png)
 
 
 [comment]: <> (URL Link)
 
 [freenom]: http://www.freenom.com
 [dnssec]: https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%89%A9%E5%B1%95
-
-[comment]: <> (Image Link)
-[01-enter-cloud-dns]: images/learn_gcp_cloud_dns_01_click_cloud_dns.png
-[02-create-domain]: images/learn_gcp_cloud_dns_02_select_create_domain.png
-[03-dns-domain-created]: images/learn_gcp_cloud_dns_03_create_dns_domain.png
-[04-add-dns-record00]: images/learn_gcp_cloud_dns_05_add_record_00.png
-[04-add-dns-record01]: images/learn_gcp_cloud_dns_05_add_record_01.png
-[04-add-dns-record02]: images/learn_gcp_cloud_dns_05_add_record_02.png
-[05-show-dns-detail]: images/learn_gcp_cloud_dns_06_dns_detail.png
-[setup-ns-on-freenom01]: images/learn_gcp_cloud_dns_07_setup_ns_01.png
-[setup-ns-on-freenom02]: images/learn_gcp_cloud_dns_07_setup_ns_02.png
-[setup-ns-on-freenom03]: images/learn_gcp_cloud_dns_07_setup_ns_03.png
-[setup-ns-on-freenom04]: images/learn_gcp_cloud_dns_07_setup_ns_04.png
-[nslookup-dns-reuslt]: images/learn_gcp_cloud_dns_08_nslookup_dns.png
