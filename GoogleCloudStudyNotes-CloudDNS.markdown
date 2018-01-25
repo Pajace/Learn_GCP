@@ -121,30 +121,27 @@ GCP 的 Cloud DNS 設定非常的容易, 首先是進到 GCP 的主控台, 接�
 
 ![nslookup for DNS][nslookup-dns-reuslt]
 
-[comment]: <> (URL Link)
-
 [freenom]: http://www.freenom.com
 [dnssec]: https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%89%A9%E5%B1%95
 
-[comment]: <> (Image Link)
-[00-request-dns-01]: images/learn_gcp_cloud_dns_00_request_new_domain01.png
-[00-request-dns-02]: images/learn_gcp_cloud_dns_00_request_new_domain02.png
-[00-request-dns-03]: images/learn_gcp_cloud_dns_00_request_new_domain03.png
-[00-request-dns-04]: images/learn_gcp_cloud_dns_00_request_new_domain04.png
-[00-request-dns-05]: images/learn_gcp_cloud_dns_00_request_new_domain05.png
-[00-request-dns-06]: images/learn_gcp_cloud_dns_00_request_new_domain06.png
-[00-request-dns-07]: images/learn_gcp_cloud_dns_00_request_new_domain07.png
-[00-request-dns-08]: images/learn_gcp_cloud_dns_00_request_new_domain08.png
-[00-request-dns-09]: images/learn_gcp_cloud_dns_00_request_new_domain09.png
-[01-enter-cloud-dns]: images/learn_gcp_cloud_dns_01_click_cloud_dns.png
-[02-create-domain]: images/learn_gcp_cloud_dns_02_select_create_domain.png
-[03-dns-domain-created]: images/learn_gcp_cloud_dns_03_create_dns_domain.png
-[04-add-dns-record00]: images/learn_gcp_cloud_dns_05_add_record_00.png
-[04-add-dns-record01]: images/learn_gcp_cloud_dns_05_add_record_01.png
-[04-add-dns-record02]: images/learn_gcp_cloud_dns_05_add_record_02.png
-[05-show-dns-detail]: images/learn_gcp_cloud_dns_06_dns_detail.png
-[setup-ns-on-freenom01]: images/learn_gcp_cloud_dns_07_setup_ns_01.png
-[setup-ns-on-freenom02]: images/learn_gcp_cloud_dns_07_setup_ns_02.png
-[setup-ns-on-freenom03]: images/learn_gcp_cloud_dns_07_setup_ns_03.png
-[setup-ns-on-freenom04]: images/learn_gcp_cloud_dns_07_setup_ns_04.png
-[nslookup-dns-reuslt]: images/learn_gcp_cloud_dns_08_nslookup_dns.png
+[00-request-dns-01]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_00_request_new_domain01.png
+[00-request-dns-02]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_00_request_new_domain02.png
+[00-request-dns-03]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_00_request_new_domain03.png
+[00-request-dns-04]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_00_request_new_domain04.png
+[00-request-dns-05]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_00_request_new_domain05.png
+[00-request-dns-06]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_00_request_new_domain06.png
+[00-request-dns-07]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_00_request_new_domain07.png
+[00-request-dns-08]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_00_request_new_domain08.png
+[00-request-dns-09]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_00_request_new_domain09.png
+[01-enter-cloud-dns]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_01_click_cloud_dns.png
+[02-create-domain]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_02_select_create_domain.png
+[03-dns-domain-created]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_03_create_dns_domain.png
+[04-add-dns-record00]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_05_add_record_00.png
+[04-add-dns-record01]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_05_add_record_01.png
+[04-add-dns-record02]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_05_add_record_02.png
+[05-show-dns-detail]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_06_dns_detail.png
+[setup-ns-on-freenom01]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_07_setup_ns_01.png
+[setup-ns-on-freenom02]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_07_setup_ns_02.png
+[setup-ns-on-freenom03]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_07_setup_ns_03.png
+[setup-ns-on-freenom04]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_07_setup_ns_04.png
+[nslookup-dns-reuslt]: https://raw.githubusercontent.com/Pajace/Learn_GCP/master/images/01_cloud_dns/learn_gcp_cloud_dns_08_nslookup_dns.png
