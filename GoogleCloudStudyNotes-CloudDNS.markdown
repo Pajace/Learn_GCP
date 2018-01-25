@@ -23,13 +23,13 @@ DNS, Domain Name Service, 是一種以文字代替 IP 位置的一種查詢服�
 
 ## 申請免費的 DNS
 
-[freenom] 可以申請面費的 DNS
+[freenom] 可以申請免費的 DNS
 
 ## 設定 Cloud DNS
 
 GCP 的 Cloud DNS 設定非常的容易, 首先是進到 GCP 的主控台, 接著點選 **Cloud DNS**
 
-![][01-enter-cloud-dns]
+![][enter-cloud-dns]
 
 接著是選擇建立區域
 
@@ -52,7 +52,9 @@ GCP 的 Cloud DNS 設定非常的容易, 首先是進到 GCP 的主控台, 接�
 1. mine.elegant-aeon.tk 對應到 (A) 35.201.139.239
 
 ![][04-add-dns-record00]
+
 ![][04-add-dns-record01]
+
 ![][04-add-dns-record02]
 
 新增好兩筆紀錄之後就會在 區域詳細資料看到我們剛剛新增的那兩筆
@@ -97,7 +99,7 @@ GCP 的 Cloud DNS 設定非常的容易, 首先是進到 GCP 的主控台, 接�
 [dnssec]: https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%89%A9%E5%B1%95
 
 [comment]: <> (Image Link)
-[01-enter-cloud-dns]: images/learn_gcp_cloud_dns_01_click_cloud_dns.png
+[enter-cloud-dns]: images/learn_gcp_cloud_dns_01_click_cloud_dns.png
 [02-create-domain]: images/learn_gcp_cloud_dns_02_select_create_domain.png
 [03-dns-domain-created]: images/learn_gcp_cloud_dns_03_create_dns_domain.png
 [04-add-dns-record00]: images/learn_gcp_cloud_dns_05_add_record_00.png
